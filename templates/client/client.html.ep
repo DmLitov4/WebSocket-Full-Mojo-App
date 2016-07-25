@@ -1,0 +1,10 @@
+%layout 'default';
+%title 'client';
+
+<script>
+ws.onmessage = function (event) {
+    var data = event.data;
+    document.getElementById("square").style.backgroundColor = event.data;
+};
+</script>
+<center><div id="square" style="width:500px; height:500px;background:blue;"></div></center>

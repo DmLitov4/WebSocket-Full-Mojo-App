@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+     <head>
+        <title> WebSocket App </title>
+     </head>
+     <body>
+         <center><h3> Welcome to WebSocket App! </h3></center>
+         <script>
+             var ws = new WebSocket('<%= url_for('test')->to_abs %>');   
+         </script>
+         <%= content %>
+     </body>
+</html>

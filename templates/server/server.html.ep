@@ -1,0 +1,8 @@
+%layout 'default';
+%title 'server'; 
+<script>
+  function nextColor() {
+    ws.send('change');
+};
+</script>
+<center><button onclick='nextColor()'>Change color again!</button></center>
